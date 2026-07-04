@@ -1,0 +1,24 @@
+<div class="photo-card">
+  <!-- Клик по превью открывает лайтбокс -->
+  <a href="#{{PHOTO_ID}}">
+    <img src="photos/{{REL_PATH}}" alt="{{FILE_NAME}}" loading="lazy">
+  </a>
+  <div class="photo-info">
+    <strong>{{FILE_NAME}}</strong>
+    <div class="meta-data">Camera: {{CAMERA}} | Date: {{DATE}}</div>
+  </div>
+</div>
+
+<!-- Модальное окно лайтбокса -->
+<div id="{{PHOTO_ID}}" class="lightbox">
+  <!-- Ссылка-задник теперь валидна -->
+  <a href="#_" class="lightbox-close-bg" aria-label="Close lightbox">Close</a>
+  <div class="lightbox-content">
+    <img src="photos/{{REL_PATH}}" alt="{{FILE_NAME}}">
+    <div class="lightbox-caption">
+      <span>{{FILE_NAME}}</span>
+      <span class="lightbox-meta">Camera: {{CAMERA}} | Date: {{DATE}}</span>
+    </div>
+    <a href="#_" class="lightbox-close-btn" aria-label="Close window">&times;</a>
+  </div>
+</div>
