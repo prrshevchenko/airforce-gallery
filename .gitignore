@@ -5,7 +5,15 @@
 
 # Node artifact files
 node_modules/
-dist/
+# Build artifacts
+/dist/
+/target/
+
+# Operating system metadata
+Desktop.ini
+
+# FastStone cache files (if any loop into the root)
+*.db
 
 # Compiled Java class files
 *.class
@@ -18,10 +26,6 @@ dist/
 
 # Package files
 *.jar
-
-# Maven
-target/
-dist/
 
 # JetBrains IDE
 .idea/
@@ -62,7 +66,6 @@ Thumbs.db
 /build
 
 # misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
